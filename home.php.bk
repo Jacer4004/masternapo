@@ -1,0 +1,40 @@
+<style>
+	.notificaciones
+{
+	border:1px solid #4D4D4D;
+	box-shadow:2px 1px 3px #4D4D4D;
+	max-width:450px;
+	max-height:400px;
+	min-height:120px;
+	margin:15px;
+	border-radius:4px;
+	font-size:14px;
+	
+	
+}
+.notificaciones h4
+{
+	margin:0px; padding:3px;
+	background:#2998CD; color:#FFFFFF;
+	border-radius:3px 3px 0px 0px;
+	
+}
+</style>
+
+<!--DASHBOARD-->
+<div style="margin:20px">
+<h3 align="center">Avisos</h3>
+<form name="buscarapido" id="buscarapido" class="formularios">
+Buscar: <input style="width:300px" type="text" name="buscar" placeholder="Cedula, nombres, apellidos, IP, usuario AD"> <input type="button" value="Buscar" class="boton color_btn_azul" onClick="cargardiv_form('mod_dashboard/buscarsoportetecnico.php','#resultadorapido','#buscarapido')">
+</form>
+<div id="dashboard"  align="center">
+	<div id="notificaciones" class="notificaciones">
+    <h4>Datos del Funcionario</h4><br>
+    <div id="resultadorapido">
+    Resultados de la búsqueda
+    </div><br>
+
+    	</div>
+</div>
+
+</div>
